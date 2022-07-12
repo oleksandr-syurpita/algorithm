@@ -216,7 +216,7 @@ functionTask_5_2(n: 6)
 func functionTask_5_1(n: Int) -> Double {
 //    1 Розрахуйте y = n(n + 1) / 2 , где n - довільне ціле число, що вводиться з клавіатури;
     
-    let x =  7 * (n + 1)
+    let x =  n * (n + 1)
  
     let y = x / 2
     
