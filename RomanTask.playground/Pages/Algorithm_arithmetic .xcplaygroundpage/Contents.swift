@@ -3,7 +3,6 @@
 
 import Foundation
 
-
 //Calculate sum: 1 + 2 + 3 + 4 + 5 + 6 + 7+ ..., where n is count of numbers
 func functionTask3_1(n: Int) ->Int {
     guard n > 0 else { return 0 }
