@@ -79,7 +79,7 @@ func sumArithmeticProgression(start: Int, step: Int, n: Int) -> Int {
     var sum = 0
     var number = start
     
-    while iteration < n{
+    while iteration < n {
         sum += number
         number += step        
         iteration += 1
