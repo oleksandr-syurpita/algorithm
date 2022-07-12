@@ -1,4 +1,5 @@
 import UIKit
+import Foundation
 
 //: [Previous](@previous)
 
@@ -23,7 +24,7 @@ func functionTask_5_10(n:Int) -> Double {
         temp1 *= temp2
         loop += 1
     }
-    let y =  8 + temp + temp1 / 20
+    let y =  (8 + temp + temp1) / 20
     return Double(y)
 
 }
