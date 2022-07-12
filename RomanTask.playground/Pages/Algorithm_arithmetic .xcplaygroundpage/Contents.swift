@@ -13,23 +13,17 @@ func functionTask3_1(i: Int) ->Int {
     var number = 0
     
     while i > loop {
-        print("number: \(number)")
         number += 1
-        
         sum += number
-        print("sum: \(sum)")
-        
         loop += 1
-        
     }
-    
     return sum
     
 }
 functionTask3_1(i: 3)
 
 print("##################")
-func functionTask_3_2(n: Int,i: Int) -> Int {
+func functionTask_3_2(n: Int, i: Int) -> Int {
     
     //Calculate sum: 1 + 3 + 5 + 7 + ..., where n is count of numbers
     guard n > 0 else { return 0 }
@@ -37,15 +31,10 @@ func functionTask_3_2(n: Int,i: Int) -> Int {
     var loop = 0
     var sum = 0
     var  number = 1
-    print("Start: \(number)")
     
     while i > loop {
         sum +=  number
-        print("sum: \(sum)")
-        
         number += n
-        print("number: \(number)")
-        
         loop += 1
     }
     
@@ -61,17 +50,10 @@ func functionTask_3_3(n: Int, i: Int) -> Int {
     var sum = number
     
     while i > loop {
-        
         number -= 1
-        
         sum -= number
-        
-        print("number: \(number)")
-        print("sum: \(sum)")
-        
         loop += 1
     }
-    
     return sum
 }
 functionTask_3_3(n: 4, i: 3)
@@ -85,17 +67,11 @@ func functionTask_3_4(n: Int) -> Int {
     var sum = number
     
     while n > loop {
-        
         number -= 5
-        
         sum -= number
-        
-        print("number: \(number)")
-        print("sum: \(sum)")
-        
         loop += 1
     }
-    
+
     return sum
 }
 
@@ -107,17 +83,10 @@ func sumArithmeticProgression(start: Int, step: Int, n: Int) -> Int {
     var loop = 0
     var sum = 0
     var  number = start
-    print("Start: \(number)")
     
     while n > loop {
-        
-        
         sum +=  number
-        print("sum: \(sum)")
-        
-        number += step
-        print("number: \(number)")
-        
+        number += step        
         loop += 1
     }
     

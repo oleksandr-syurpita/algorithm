@@ -12,11 +12,8 @@ func functionTask_4_1(n: Int) -> Int {
        var number = 1
 
        while n > loop {
-           print("number: \(number)")
            sum += number
            number *= 2
-           print("sum: \(sum)")
-     
            loop += 1
        }
        return sum
@@ -34,14 +31,9 @@ func functionTask_4_2(n: Int) -> Int {
     while n > loop {
         let constant = 3
         sum += temp
-        print("sum: \(sum)")
-
         temp *= constant
-
-
         loop += 1
     }
-    
     return sum
 }
 functionTask_4_2(n: 2)
@@ -54,15 +46,10 @@ func functionTask_4_3(n: Int) -> Double {
     var temp = Double(200)
     var sum = 0
     var loop = 0
-    print("temp1: \(temp)")
-
+    
     while n > loop {
         sum += Int(temp)
-
         temp /= 2
-        print("temp1: \(temp)")
-
-        
         loop += 1
     }
     return Double(sum)
@@ -75,21 +62,11 @@ func functionTask_4_4(n: Int) -> Int {
     guard n > 0 else { return 0 }
     var loop = 0
     var temp = 5
-    let temp2 = 0
     var result = 0
 
-    print("Start: \(temp)")
-
     while n > loop {
-        
-        
-        print("temp2: \(temp2)")
-
         result += temp
-        print("result: \(result)")
-
         temp *= -2
-        
         loop += 1
     }
     //    Calculate sum: 5 - 10 + 20 - 40 + 80 - 160 + ... , where n is count of numbers
@@ -104,15 +81,9 @@ func sumGeometricProgression(start: Double, step: Double, n: Int) -> Double {
     
     var temp = start
     var loop = 0
-    print("temp1: \(temp)")
-
+    
     while n > loop {
-        
-
         temp += step
-        print("temp1: \(temp)")
-
-        
         loop += 1
     }
     return temp

@@ -17,14 +17,12 @@ func functionTask_5_10(n:Int) -> Double {
         temp *= temp2
         loop += 1
     }
-    print(temp)
-
+    
     loop = 1
     while loop < 2 {
         temp1 *= temp2
         loop += 1
     }
-    print(temp1)
     let y =  8 + temp + temp1 / 20
     return Double(y)
     //10 Розрахуйте y= 8+n3 +n2 /20, где n- довільне ціле число, що вводиться з клавіатури;
@@ -61,16 +59,15 @@ func functionTask_5_8(n: Int) -> Double {
         x1 *= temp
         loop += 1
     }
-    print(x1)
     loop = 1
     while n > loop {
         x2 *= temp2
         loop += 1
     }
-    print(x2)
-
+    
     let x3 = x1 * (( n - 1) * ( x2 + 1))
     let y = x3 / 30
+    
     return Double(y)
 }
 
@@ -88,23 +85,20 @@ func functionTask_5_7(n: Int) -> Double {
     
     while n > loop {
         x1 *= temp
-        
         loop += 1
     }
-    print(x1)
-
+    
     loop = 1
     while n > loop {
         x2 *= temp2
         loop += 1
     }
-    print(x2)
+    
     loop = 1
     while n > loop {
         x3 *= temp3
         loop += 1
     }
-    print(x3)
     let temp4 =  (5 * ((n + 1) * (x3 + 1 ) * (x2 * x1 - 1)) ) / 30
     
 
@@ -125,12 +119,10 @@ func functionTask_5_6(n: Int) -> Double {
         x *= temp2
         loop += 1
     }
-    print(x)
     loop = 1
 
     while loop < 2  {
         x1 *= temp
-        
         loop += 1
     }
     let y = (x1 * (x * 2 - 1 )) / 5
