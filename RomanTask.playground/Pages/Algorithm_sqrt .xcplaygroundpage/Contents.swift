@@ -7,7 +7,7 @@ import Foundation
 func functionTask_5_10(n:Int) -> Double {
     
     guard n > 0 else { return 0 }
-    
+    //10 Розрахуйте y= 8+n3 +n2 /20, где n- довільне ціле число, що вводиться з клавіатури;
 
     var temp = n
     var temp1 = n
@@ -25,7 +25,6 @@ func functionTask_5_10(n:Int) -> Double {
     }
     let y =  8 + temp + temp1 / 20
     return Double(y)
-    //10 Розрахуйте y= 8+n3 +n2 /20, где n- довільне ціле число, що вводиться з клавіатури;
 
 }
 functionTask_5_10(n: 5)
@@ -154,7 +153,8 @@ functionTask_5_5(n: 4)
 
 func functionTask_5_4(n: Int) -> Double {
 //    4 Розрахуйте y=n2(n+1)2 /4,где n-довільнецілечисло,щовводиться з клавіатури;
-   
+    guard n > 0 else { return 0 }
+
     var  x = n
     let temp = n
      var loop = 1
@@ -171,7 +171,8 @@ functionTask_5_4(n: 6)
 
 func functionTask_5_3(n: Int) -> Double {
 //    3. Розрахуйте y=n(n+1)(2n+1)/6, где n- довільне ціле число, що вводиться з клавіатури;
-    
+    guard n > 0 else { return 0 }
+
     var x = 2
     let temp = 2
     var loop = 1
@@ -188,7 +189,8 @@ functionTask_5_3(n: 5)
 
 func functionTask_5_2(n: Int) -> Double {
 //    2 Розрахуйте y=(2n+n)(n+1)/2, где n- довільне ціле число, що вводиться з клавіатури;
-    
+    guard n > 0 else { return 0 }
+
     var x = 2
     let temp = 2
     var loop = 1
@@ -207,9 +209,8 @@ functionTask_5_2(n: 6)
 
 func functionTask_5_1(n: Int) -> Double {
 //    1 Розрахуйте y = n(n + 1) / 2 , где n - довільне ціле число, що вводиться з клавіатури;
-    
+    guard n > 0 else { return 0 }
     let x =  n * (n + 1)
- 
     let y = x / 2
     
     return Double(y)
