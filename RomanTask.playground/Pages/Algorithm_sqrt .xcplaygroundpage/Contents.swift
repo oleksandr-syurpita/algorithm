@@ -28,8 +28,8 @@ func functionTask_5_10(n:Int) -> Double {
 let result5_10 = functionTask_5_10(n: 5)
 print("Result for 5.10 - \(result5_10)" )
 
-//func functionTask_5_9(n: Int) -> Double {
 ////    9 дивись прикріплений скріншот
+//func functionTask_5_9(n: Int) -> Double {
 //    let temp = 2
 //    var loop = 1
 //    var x1 = 2
