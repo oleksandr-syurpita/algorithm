@@ -38,19 +38,19 @@ let result3_2 = functionTask_3_2(n: 4)
 print("Result for 3.2 - \(result3_2)" )
 
 //    Calculate sum: 5 - 4 - 3 - 2 - 1 - 0 - (-1) - (-2) - ... , where n is count of numbers
-func functionTask_3_3(n: Int, i: Int) -> Int {
+func functionTask_3_3(n: Int) -> Int {
     var iteration = 1
-    var number = n
+    var number = 5
     var sum = number
     
-    while iteration < i {
+    while iteration < n {
         number -= 1
         sum -= number
         iteration += 1
     }
     return sum
 }
-let result3_3 = functionTask_3_3(n: 4, i: 3)
+let result3_3 = functionTask_3_3(n: 3)
 print("Result for 3.3 - \(result3_3)" )
 
 //    Calculate sum: 100 - 95 - 90 - 85 - ... , where n is count of numbers
@@ -72,8 +72,6 @@ print("Result for 3.4 - \(result3_4)" )
 
 //Write function: `func sumArithmeticProgression(start: Int, step: Int, n: Int) -> Int`, where start is the start number, step is the difference between two near numbers, n is count of numbers. Function should return its sum.
 func sumArithmeticProgression(start: Int, step: Int, n: Int) -> Int {
-    guard start > 0 else { return 0 }
-    guard step > 0 else { return 0 }
     guard n > 0 else { return 0 }
     var iteration = 0
     var sum = 0

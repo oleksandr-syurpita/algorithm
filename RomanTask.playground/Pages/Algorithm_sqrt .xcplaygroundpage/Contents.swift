@@ -22,7 +22,7 @@ func functionTask_5_10(n:Int) -> Double {
         temp1 *= temp2
         iteration += 1
     }
-    let y =  (8 + temp + temp1) / 20
+    let y =  8 + temp + temp1 / 20
     return Double(y)
 }
 let result5_10 = functionTask_5_10(n: 5)
@@ -37,6 +37,7 @@ print("Result for 5.10 - \(result5_10)" )
 //        x1 *= temp
 //        loop += 1
 //    }
+//    print(x1)
 //    let y =  n * sqrt(x1 + 1 ) / 3
 //
 //    return Double(y)

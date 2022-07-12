@@ -73,8 +73,6 @@ print("Result for 4.4 - \(result4_4)" )
 
 //    Write function: `func sumGeometricProgression(start: Double, step: Double, n: Int) -> Double`, where start is the start number, step is the difference between two near numbers, n is count of numbers. Function should return its sum.
 func sumGeometricProgression(start: Double, step: Double, n: Int) -> Double {
-    guard start > 0 else { return 0 }
-    guard step > 0 else { return 0 }
     guard n > 0 else { return 0 }
     var temp = start
     var iteration = 0
