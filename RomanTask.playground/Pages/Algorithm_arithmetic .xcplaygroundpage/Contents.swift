@@ -5,95 +5,88 @@ import Foundation
 
 
 //Calculate sum: 1 + 2 + 3 + 4 + 5 + 6 + 7+ ..., where n is count of numbers
-func functionTask3_1(i: Int) ->Int {
-    guard i > 0 else { return 0 }
-    
-    var loop = 0
+func functionTask3_1(n: Int) ->Int {
+    guard n > 0 else { return 0 }
+    var iteration = 0
     var sum = 0
     var number = 0
     
-    while i > loop {
+    while iteration < n {
         number += 1
         sum += number
-        loop += 1
+        iteration += 1
     }
     return sum
-    
 }
-functionTask3_1(i: 3)
+let result3_1 = functionTask3_1(n: 3)
+print("Result for 3.1 - \(result3_1)" )
 
-print("##################")
+//Calculate sum: 1 + 3 + 5 + 7 + ..., where n is count of numbers
 func functionTask_3_2(n: Int, i: Int) -> Int {
-    
-    //Calculate sum: 1 + 3 + 5 + 7 + ..., where n is count of numbers
     guard n > 0 else { return 0 }
     guard i > 0 else { return 0 }
-    var loop = 0
+    var iteration = 0
     var sum = 0
-    var  number = 1
+    var number = 1
     
-    while i > loop {
-        sum +=  number
+    while iteration < i {
+        sum += number
         number += n
-        loop += 1
+        iteration += 1
     }
-    
     return sum
-    
 }
-functionTask_3_2(n: 2, i:4)
+let result3_2 = functionTask_3_2(n: 2, i: 4)
+print("Result for 3.2 - \(result3_2)" )
 
+//    Calculate sum: 5 - 4 - 3 - 2 - 1 - 0 - (-1) - (-2) - ... , where n is count of numbers
 func functionTask_3_3(n: Int, i: Int) -> Int {
-    //    Calculate sum: 5 - 4 - 3 - 2 - 1 - 0 - (-1) - (-2) - ... , where n is count of numbers
-    var loop = 1
+    var iteration = 1
     var number = n
     var sum = number
     
-    while i > loop {
+    while iteration < i {
         number -= 1
         sum -= number
-        loop += 1
+        iteration += 1
     }
     return sum
 }
-functionTask_3_3(n: 4, i: 3)
+let result3_3 = functionTask_3_3(n: 4, i: 3)
+print("Result for 3.3 - \(result3_3)" )
 
-print("#############")
+//    Calculate sum: 100 - 95 - 90 - 85 - ... , where n is count of numbers
 func functionTask_3_4(n: Int) -> Int {
-    //    Calculate sum: 100 - 95 - 90 - 85 - ... , where n is count of numbers
     guard n > 0 else { return 0 }
-    var loop = 1
+    var iteration = 1
     var number = 100
     var sum = number
     
-    while n > loop {
+    while iteration < n {
         number -= 5
         sum -= number
-        loop += 1
+        iteration += 1
     }
-
     return sum
 }
+let result3_4 = functionTask_3_4(n: 3)
+print("Result for 3.4 - \(result3_4)" )
 
-functionTask_3_4(n: 3)
-
-print("%%%%%%%%%%")
+//Write function: `func sumArithmeticProgression(start: Int, step: Int, n: Int) -> Int`, where start is the start number, step is the difference between two near numbers, n is count of numbers. Function should return its sum.
 func sumArithmeticProgression(start: Int, step: Int, n: Int) -> Int {
-    //Write function: `func sumArithmeticProgression(start: Int, step: Int, n: Int) -> Int`, where start is the start number, step is the difference between two near numbers, n is count of numbers. Function should return its sum.
-    var loop = 0
+    var iteration = 0
     var sum = 0
-    var  number = start
+    var number = start
     
-    while n > loop {
-        sum +=  number
+    while iteration < n{
+        sum += number
         number += step        
-        loop += 1
+        iteration += 1
     }
-    
     return sum
 }
-sumArithmeticProgression(start: 100, step: 2, n: 5)
-
+let resultSumArithmetic = sumArithmeticProgression(start: 100, step: 2, n: 5)
+print("sum Arithmetic Progression - \(resultSumArithmetic)" )
 
 
 
