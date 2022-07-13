@@ -28,22 +28,40 @@ func functionTask_5_10(n:Int) -> Double {
 let result5_10 = functionTask_5_10(n: 5)
 print("Result for 5.10 - \(result5_10)" )
 
-////    9 дивись прикріплений скріншот
-//func functionTask_5_9(n: Int) -> Double {
-//    let temp = 2
-//    var loop = 1
-//    var x1 = 2
-//    while n > loop {
-//        x1 *= temp
-//        loop += 1
-//    }
-//    print(x1)
-//    let y =  n * sqrt(x1 + 1 ) / 3
-//
-//    return Double(y)
-//}
-//let result5_9 = functionTask_5_9(n: 2)
-//print("Result for 5.9 - \(result5_9)" )
+//    9 дивись прикріплений скріншот
+func functionTask_5_9(n: Double) -> Double {
+//    5 * sqrt(2^5 +  1) / 3
+    let temp:Double  = 2
+    var loop:Double = 1
+    var x1:Double =  2
+
+    while n > loop {
+        x1 *= Double(temp)
+        loop += 1
+    }
+    x1 = x1 + 1
+    var x2:Double = 1
+    var x3: Double = 1
+    var temp3:Double = 0
+    var temp2 = 0
+    
+    while x1 > 0 {
+        temp3 = x2 * x3
+        temp2 = Int(temp3)
+    
+        if temp2 == Int(x1) {
+            break
+        }
+        x2 += 0.01
+        x3 += 0.01
+    }
+    let y = (n * (x2)) / 3
+
+    return Double(y)
+}
+let result5_9 = functionTask_5_9(n: 5)
+print("Result for 5.9 - \(result5_9)" )
+
 
 //    8 Розрахуйте y=n3(n−1)(2n+1)/30, где n- довільне ціле число, що вводиться з клавіатури;
 func functionTask_5_8(n: Int) -> Double {
